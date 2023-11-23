@@ -1,0 +1,19 @@
+# ---
+# bridge_networks:
+#   - name: osbr0
+#     subnet: {{ network_range }}
+#     gateway: {{ network_gateway }}
+#   - name: osbr1
+#     subnet: {{ network_range_osbr1 }}
+#     gateway: {{ network_gateway_osbr1 }}
+
+# # default network that should be used by all scenarios
+
+network: eth0
+
+# global defaults
+defaults:
+  uac-sipp:
+    proxy: {{ opensips_ip }} : {{ opensips_port }}
+    keys:
+      domain: {{ opensips_ip }}

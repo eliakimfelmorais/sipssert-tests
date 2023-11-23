@@ -1,0 +1,5 @@
+---
+opensips_port: 5060
+uac_port: 5040
+opensips_ip: ims.sippulse.com
+callee: 32374703
